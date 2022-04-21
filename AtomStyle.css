@@ -19,13 +19,13 @@
 }
 
 .pair{
-	 border: 2px solid #70618b;
-	 border-top: 3px solid green;
+	 border: 2px solid #728fce;
+	 //border-top: 3px solid GhostWhite;
 	 position: absolute;
 	 border-radius: 45%;
 	 width: 50px;
 	 height: 24px;
-	 background-color: #d4c3ef;
+	 background-color: Lavender;
 	 opacity: 75%;
 	 ///left: 100px;
 }
