@@ -334,6 +334,20 @@ function getLength(atom1, atom2){
 	return length;
 }
 
+function Help(){
+	txt = "Create Atom: Click one of the element boxes.";
+	txt += "\nMove Atom: Drag anywhere on the screen.";
+	txt += "\nHighlight any element: Click and a gold border will appear.";
+	txt += "\nCreat bond: Highlight first atom, then click the second atom.";
+	txt += "\nDouble/Triple bonds: Click the bond. It will cycle throught single, double and triple bonds.";
+	txt += "\nCreate Electrons: Highlight atom then click electrons button.";
+	txt += "\nMove Electrons: Drag and they will rotate around atom.";
+	txt += "\nDelete any element: Highligh element, then click the Delete button.";
+	txt += "\nRestart or Clear screen: Click the Clear/Restart button.";
+	txt += "\nQuestions or suggestions: crigheimer@yahoo.com";
+	alert(txt);
+}
+
 function listStyles(el){
 	var styles = window.getComputedStyle(el);
 	var styleList = "";
