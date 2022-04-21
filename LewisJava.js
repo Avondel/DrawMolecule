@@ -357,6 +357,7 @@ function Help(){
 	txt += "\nDouble/Triple bonds: Click the bond. It will cycle throught single, double and triple bonds.";
 	txt += "\nCreate Electrons: Highlight atom then click electrons button.";
 	txt += "\nMove Electrons: Drag and they will rotate around atom.";
+	txt += "\nSingle and Paired electrons: Click the electrons.";
 	txt += "\nDelete any element: Highligh element, then click the Delete button.";
 	txt += "\nRestart or Clear screen: Click the Clear/Restart button.";
 	txt += "\nQuestions or suggestions: crigheimer@yahoo.com";
