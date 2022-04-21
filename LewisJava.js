@@ -82,6 +82,18 @@ function mouseupBond(){
 function clickPair(event){
 	but = document.getElementById("DeleteEl");
 	but.disabled = false;
+	if(activeEl.dataset.type=='p'){
+		temp = document.getElementById(activeEl.id+'1');
+		temp.remove();
+		activeEl.dataset.type='s';
+	}
+	else{
+		var elec1 = document.createElement("span");
+		elec1.setAttribute("id",activeEl.id+"1");
+		elec1.setAttribute("class","electron1");
+		activeEl.appendChild(elec1);
+		activeEl.dataset.type='p';
+	}
 }
 
 function createPair(){
@@ -98,7 +110,10 @@ function createPair(){
 	pair.setAttribute("id", "pair"+count);
 	pair.setAttribute("class", "pair");
 	pair.dataset.atom = atom1.id;
+	pair.dataset.type = 'p';
+	elec1.setAttribute("id",pair.id+"1");
 	elec1.setAttribute("class","electron1");
+	elec2.setAttribute("id",pair.id+"2");
 	elec2.setAttribute("class","electron2");
 	pair.addEventListener("mousedown", mousedownPair);
 	elec1.addEventListener("mousedown", clickChild);
