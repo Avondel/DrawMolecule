@@ -23,6 +23,11 @@
 	font-size: 2em;
 	font-style: italic;
 }
+#Help{
+	top: 20px;
+	left: 20px;
+	position: absolute;
+}
 
 .footer {
 	position: fixed;

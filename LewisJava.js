@@ -82,6 +82,8 @@ function mouseupBond(){
 function clickPair(event){
 	but = document.getElementById("DeleteEl");
 	but.disabled = false;
+	if(moveCountElec > 20)
+		return;
 	if(activeEl.dataset.type=='p'){
 		temp = document.getElementById(activeEl.id+'1');
 		temp.remove();
@@ -151,6 +153,7 @@ function createPair(){
 
 function mousedownPair(e){
 	e.cancelBubble = true;
+	moveCountElec = 0;
 	deactivateEl();
 	activeEl = e.target;
 	activeEl.setAttribute("class", "pair " + "active");
@@ -175,6 +178,7 @@ function mousedownPair(e){
 
 function mousemovePair(e){
 	e.cancelBubble = true;
+	moveCountElec = moveCountElec + 1;
 	atomTemp.dataset.ax = e.clientX;
 	atomTemp.dataset.ay = e.clientY;
 	calc = getCalc(atomTemp, atomTemp2);

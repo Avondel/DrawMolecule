@@ -117,6 +117,7 @@ function clickAtom(e){
 
 function CreateAtom(type, symbol){
 	obj = 'Molecule';
+	//alert(changeAtom);
 	if( changeAtom ) {
 		atom1.setAttribute("class", "nucleus " + type);
 		atom1.innerHTML = symbol;
@@ -204,10 +205,11 @@ function deleteAtom(){
 function differentAtom(event){
 	changeAtom = true;
 	gotAtom = true;
-	type = "none";
-	atom1.setAttribute("class", "nucleus " + type);
-	atom1.innerHTML = "None";
-	atom1.dataset.type = type;
+	atom1.classList.add("change");
+	//type = "none";
+	//atom1.setAttribute("class", "nucleus " + type);
+	//atom1.innerHTML = "None";
+	//atom1.dataset.type = type;
 	changeAtomButtons(true);
 }
 

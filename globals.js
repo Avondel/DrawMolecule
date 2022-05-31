@@ -7,6 +7,7 @@ let changeAtom = false;
 let gotAtom = false;
 let moveOrigin = false;
 let moveCount = 0;
+let moveCountElec = 0;
 let count = 0;
 let atom1 = null; //current atom
 let atom2 = null;

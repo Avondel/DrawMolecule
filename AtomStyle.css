@@ -259,3 +259,7 @@
 .active {
 	border: 2px solid gold;
 }
+
+.change {
+	border: 2px solid red;
+}
