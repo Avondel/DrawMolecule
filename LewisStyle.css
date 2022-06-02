@@ -37,6 +37,21 @@
 	left: 0px;
 	/* Height of the footer*/ 
 	height: 80px;
+	background: #eeffdd;
+}
+
+.buttons {
+	text-align: center;
+}
+
+.footer2 {
+	position: fixed;
+	padding: 10px 10px 0px 10px;
+	bottom: 0;
+	width: 100%;
+	left: 0px;
+	/* Height of the footer*/ 
+	height: 80px;
 	text-align: center;
 	background: #eeffdd;
 }
