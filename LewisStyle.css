@@ -67,6 +67,10 @@
 	font-style: normal
 }
 
+.legal {
+	text-align: left;
+}
+
 .locked{
 	background: rgba(240,120, 120, 1);
 	border: solid 1px #ddeeff;
